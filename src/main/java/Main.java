@@ -16,10 +16,29 @@ import javax.json.JsonObject;
 import static spark.Spark.*;
 import static spark.debug.DebugScreen.enableDebugScreen;
 
+/**
+ * <h1>Codecool Shop</h1>
+ * A simple Spark based webshop application with database connection
+ * where the user can add items to the cart.
+ * <p>
+ * <b>Note:</b> Please don't use this application in real life
+ * as it has serious security issues.
+ *
+ * @author  CodewalkerZ
+ * @version 0.2
+ * @since   2017-05-01
+ */
+
 public class Main {
 
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
 
+
+    /**
+     * This is the main method which handles the Spark requests.
+     * It does logging to the console.
+     * @param args Unused.
+     */
     public static void main(String[] args) {
 
         PropertyConfigurator.configure("src/main/resources/log4j.properties");

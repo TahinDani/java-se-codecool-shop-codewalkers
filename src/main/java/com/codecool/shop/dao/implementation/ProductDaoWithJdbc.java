@@ -25,8 +25,6 @@ public class ProductDaoWithJdbc implements ProductDao {
     private static final String DB_USER = configParams.get(0);
     private static final String DB_PASSWORD = configParams.get(1);
 
-
-
     private ProductCategoryDaoJDBC prodCatDaoJDBC = ProductCategoryDaoJDBC.getInstance();
     private SupplierDaoJDBC supplierDaoJDBC = SupplierDaoJDBC.getInstance();
 
